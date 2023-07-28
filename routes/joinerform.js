@@ -103,13 +103,13 @@ router.post('/add_new_joiner',picture, async function(req, res, next) {
   try {
     
 
-  console.log(req?.body)
-  console.log( (req?.files) ? req?.files : "")
-  const files = req.files;
-  if (!files) {
-      console.log(error)
-      res.status(400).json({Status:false,message:'Server error....'})
-  }
+  // console.log(req?.body)
+  // console.log( (req?.files) ? req?.files : "")
+  // const files = req.files;
+  // if (!files) {
+  //     console.log(error)
+  //     res.status(400).json({Status:false,message:'Server error....'})
+  // }
   var employeeCode = "SFR" + uuid.v4()
  var data = {
    employeeCode,
